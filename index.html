@@ -253,7 +253,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="" id="spm" href="#">
+                                    <a class="" id="software-package-metrics" href="#">
                                         “Software Package Metrics” de Robert Cecil Martin
                                     </a>
                                 </li>
@@ -287,7 +287,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="" id="Pesquisas atuais na área" href="#">
+                                    <a class="" id="pesquisas-atuais" href="#">
                                         Pesquisas atuais na área
                                     </a>
                                 </li>
@@ -569,6 +569,15 @@
                     $('#artigo').load('pages/framework-metricas.html');
                     // add active
                     $("#framework-metricas").addClass('active');
+                });
+                $("#framework-avaliar").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/framework-avaliar.html');
+                    // add active
+                    $("#framework-avaliar").addClass('active');
                 });
                 $("#tipos-de-metricas").click(function(){
                     // remove active 
