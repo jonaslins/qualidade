@@ -247,7 +247,7 @@
                             </span>
                             <ul>
                                 <li>
-                                    <a class="" id="dsqi" href="#">
+                                    <a class="" id="indice-qualidade" href="#">
                                         Índice de qualidade estrutural do projeto (DSQI)
 
                                     </a>
@@ -605,6 +605,15 @@
                     $('#artigo').load('pages/software-package-metrics.html');
                     // add active
                     $("#software-package-metrics").addClass('active');
+                });
+                $("#indice-qualidade").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/indice-qualidade.html');
+                    // add active
+                    $("#indice-qualidade").addClass('active');
                 });
             });
         </script>

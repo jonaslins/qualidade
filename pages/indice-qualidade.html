@@ -1,0 +1,43 @@
+<header>
+<h1 class="page__title" itemprop="headline">ÍNDICE DE QUALIDADE ESTRUTURAL DO PROJETO (DSQI)</h1>
+</header>
+<section class="page__content" itemprop="text">
+<p>
+É uma métrica de projeto arquitetural usada para avaliar a estrutura do projeto de softwares e da eficiência de seus módulos (e.g. pacotes de software orientados a objetos). 
+Possui a vantagem de ter o cálculo de suas métricas bem transparente e, é idealmente utilizado com algum framework de <i>extreme programming</i>.
+</p>
+
+<p>Os aspectos de sistema de software usados no cálculo da métrica são os seguintes:</p>
+
+<ol>
+	<li>O total de números de módulos definidos na arquitetura do programa.</li>
+	<li>O número de módulos cujas funções corretas dependem de uma entrada ou produzam uma saída para ser usada em outro local.</li>
+	<li>Acoplamentos eferentes (Ce): o número de classes de outros pacotes, cujas classes no pacote analisado são dependentes, é um indicador da dependência em externalidade do pacote.</li>
+	<li> O número de módulos cujas funções corretas dependem de processamento prévio.</li>
+	<li>O número de itens no banco de dados.</li>
+	<li>O número total de itens únicos no banco de dados.</li>
+	<li>O número de segmentos do banco de dados.</li>
+	<li>O número de módulos com um único ponto de entrada e de saída.</li>
+</ol>
+
+<p>Exemplo:</p>
+<a href="files/dsqi-1.png"</a>
+<ol>
+    <li>Como esse projeto foi desenvolvido usando orientação à objeto, o numero de classes pode ser usado. <b>(24)</b></li>
+	<li>Uma parte das funcionalidades dos módulos dependem de outra fonte ou produzem dados para outro modulo (4 classes recebem dados de módulos que recebem informação de uma conexão web). <b>(4)</b></li>
+	<li>Número de módulos que requerem dados serem previamente processados por outros módulos (temos 4 classes que populam abas baseadas nessas informações dos 4 módulos mencionados anteriormente). <b>(4)</b></li>
+	<li>Todos os itens do banco de dados, incluindo objetos e atributos que definem os objetos. <b>(22)</b></li>
+	<li>Todos os elementos do banco de dados que não são duplicados ou similares a outros itens. <b>(5)</b></li>
+	<li>Número de segmentos do banco de dados, incluindo diferentes registros ou objetos únicos. <b>(80)</b></li>
+	<li>Módulos que não possuem múltiplos pontos de entrada e saída. <b>(0)</b></li>
+</ol>
+
+<p><b>Já que o método de implementação usado foi de orientação à objeto, marcamos a opção de método distinto.</b></p>
+<a href="files/dsqi-2.png"</a>
+
+<p>
+A tela mostra os pontos que o sistema contém, para cada aspecto da estrutura do sistema, A média total é .301 baseado nas prioridade dos aspectos e nas notas que foram dadas.
+As vantagens dessa métrica é que é fácil de calcular e pode ajudar desenvolvedores a verem onde o design deles podem dar problema no futuro. O número por si só não é muito útil, o ideal é que ele seja comparado com o de um sistema que foi sucesso. Quanto mais próximo de 1 melhor o índice.
+</p>
+
+
