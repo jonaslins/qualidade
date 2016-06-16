@@ -193,7 +193,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="" id="o-que" href="#">
+                                    <a class="" id="o-que-e" href="#">
                                         O que é
                                     </a>
                                 </li>
@@ -203,7 +203,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="" id="tipos-de-metrica" href="#">
+                                    <a class="" id="tipos-de-metricas" href="#">
                                         Tipos de Métricas
                                     </a>
                                 </li>
@@ -525,29 +525,59 @@
 
             $(document).ready(function(){
                 $('#artigo').load('pages/contexto.html');
-                $("#o-que").click(function(){
+                 $("#o-que-e").click(function(){
                     // remove active 
                     var x = document.getElementsByClassName("active");
                     $(x).removeClass('active');
                     // load page
-                    $('#artigo').load('pages/o-que.html');
+                    $('#artigo').load('pages/o-que-e.html');
                     // add active
-                    $("#o-que").addClass('active');
-                }); 
-
-                $("#tipos-de-metrica").click(function(){
+                    $("#o-que-e").addClass('active');
+                });
+                $("#pra-que-serve").click(function(){
+                    // remove active 
                     var x = document.getElementsByClassName("active");
                     $(x).removeClass('active');
-                    $('#artigo').load('pages/page2.html');
-                    //alert("Thanks for visiting!");
-                    $("#tipos-de-metrica").addClass('active');
+                    // load page
+                    $('#artigo').load('pages/pra-que-serve.html');
+                    // add active
+                    $("#pra-que-serve").addClass('active');
                 });
                 $("#contexto").click(function(){
+                    // remove active 
                     var x = document.getElementsByClassName("active");
                     $(x).removeClass('active');
+                    // load page
                     $('#artigo').load('pages/contexto.html');
-                    //alert("Thanks for visiting!");
+                    // add active
                     $("#contexto").addClass('active');
+                });
+                $("#criticas").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/criticas.html');
+                    // add active
+                    $("#criticas").addClass('active');
+                });
+                $("#framework-metricas").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/framework-metricas.html');
+                    // add active
+                    $("#framework-metricas").addClass('active');
+                });
+                $("#tipos-de-metricas").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/tipos-de-metricas.html');
+                    // add active
+                    $("#tipos-de-metricas").addClass('active');
                 });
             });
         </script>
