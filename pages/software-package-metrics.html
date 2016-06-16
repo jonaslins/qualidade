@@ -1,0 +1,28 @@
+<header>
+<h1 class="page__title" itemprop="headline">“Software Package Metrics” de Robert Cecil Martin</h1>
+</header>
+<section class="page__content" itemprop="text">
+<p>Em seu livro Agile Software Development: Principles, Patterns, and Practices, Robert Cecil Martin, um dos criadores da metodologia de desenvolvimento ágil de software e extreme programming, define métricas para avaliar pacotes em softwares orientados a objeto. Feito para ser usado junto a um framework de extreme programming e possui cálculo de métricas relativamente transparente. Contanto que os critérios sejam importantes, os desenvolvedores podem construir softwares que sigam essas restrições e obter melhores métricas sobre seu código. Os aspectos dos pacotes de software medidos são:</p>
+<ul>
+	<li>
+	Número de classes e interfaces: o número de classes (e interfaces) concretas e abstratas no pacote é um indicador da extensibilidade do pacote.
+	</li>
+	<li>
+	Acoplamentos aferentes (Ca): o número de classes de outros pacotes, que dependem de classes no pacote analisado, é um indicador da responsabilidade do pacote dentro do sistema. 
+	</li>
+	<li>
+	Acoplamentos eferentes (Ce): o número de classes de outros pacotes, cujas classes no pacote analisado são dependentes, é um indicador da dependência em externalidade do pacote.
+	</li>
+	<li>
+	Abstração (A): a razão do número de classes (e interfaces) abstratas no pacote analisado para o número total de classes no mesmo pacote. O escopo da métrica vai de 0 a 1, com A = 0 indicando um pacote completamente concreto, e A = 1, um pacote completamente abstrato.
+	</li>
+	<li>
+	Instabilidade (I): a razão do acoplamento eferente (Ce) para o acoplamento total (Ce + Ca) tal que I = Ce / (Ce + Ca). Essa métrica é um indicador da resiliência à mudança do pacote. O escopo da métrica é entre 0 e 1, com I = 0 indicando um pacote completamente estável, e I = 1, um pacote completamente instável.
+	</li>
+	<li>
+	Distância da sequência principal (D): a distância perpendicular de um pacote para a equação idealizada A + I = 1. D é calculado como D = | A + I - 1 |. Essa métrica é um indicador do equilíbrio do pacote entre abstração e instabilidade. Um pacote diretamente na sequência principal é otimamente equilibrado com respeito a sua abstração e instabilidade. Um pacote ideal é, então, completamente abstrato e estável (A = 1, I = 0) ou completamente concreto e instável (A = 0, I = 1). O escopo da métrica fica entre 0 a 1, com D = 0 indicando um pacote que é coincidente da sequência principal, e D = 1, um pacote tão longe quanto possível da sequência principal.
+	</li>
+	<li>
+	Ciclos de dependência de pacotes: os ciclos de dependência de pacotes são relatados assim como os caminhos hierárquicos de pacotes que participam nos ciclos de dependência. Ou seja, os pacotes na hierarquia de pacotes que dependem um do outro (ciclos de dependência).
+	</li>
+</ul>

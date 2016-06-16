@@ -4,7 +4,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
             <!-- begin SEO -->
             <title>
-                Quick-Start Guide - Minimal Mistakes
+                Métricas de Software
             </title>
             <meta content="en-US" property="og:locale">
                 <meta content="Minimal Mistakes" property="og:site_name">
@@ -578,6 +578,24 @@
                     $('#artigo').load('pages/tipos-de-metricas.html');
                     // add active
                     $("#tipos-de-metricas").addClass('active');
+                });
+                $("#pesquisas-atuais").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/pesquisas-atuais.html');
+                    // add active
+                    $("#pesquisas-atuais").addClass('active');
+                });
+                $("#software-package-metrics").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/software-package-metrics.html');
+                    // add active
+                    $("#software-package-metrics").addClass('active');
                 });
             });
         </script>
