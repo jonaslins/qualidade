@@ -152,13 +152,13 @@
                                 </a>
                             </li>
                             <li class="masthead__menu-item">
-                                <a href="https://mmistakes.github.io/minimal-mistakes/about/">
-                                    About
+                                <a id="sobre" href="#">
+                                    Sobre
                                 </a>
                             </li>
                             <li class="masthead__menu-item">
-                                <a href="https://mmistakes.github.io/minimal-mistakes/year-archive/">
-                                    Sample Posts
+                                <a id="referencias" href="#">
+                                    Referências
                                 </a>
                             </li>
                             <li class="masthead__menu-item">
@@ -271,13 +271,12 @@
                                     <a class="" href="https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/">
                                         Utility Classes
                                     </a>
-                                </li>-->
+                                </li>-->j
                             </ul>
                         </li>
                         <li>
                             <span class="nav__sub-title">
-                                Outros ???
-
+                                Problemas
                             </span>
                             <ul>
                                 <li>
@@ -615,6 +614,19 @@
                     // add active
                     $("#indice-qualidade").addClass('active');
                 });
+                $("#sobre").click(function(){
+                    // remove active 
+                    // load page
+                    $('#artigo').load('pages/sobre.html');
+                    // add active
+                });
+                $("#referencias").click(function(){
+                    // remove active 
+                    // load page
+                    $('#artigo').load('pages/referencias.html');
+                    // add active
+                });
+                
             });
         </script>
     </body>
