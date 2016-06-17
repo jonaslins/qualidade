@@ -119,9 +119,16 @@
                                         Pra que serve
                                     </a>
                             </li>
-                            <li><a href="#" id="definicao-medicao">
+                            <li>
+                                <a href="#" id="desenvolvendo-metricas">
+                                    Desenvolvendo Métricas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="definicao-medicao">
                                     Definição de Medição
-                                </a></li>
+                                </a>
+                            </li>
                             <li>
                                 <a class="" id="tipos-de-metricas" href="#">
                                         Tipos de Métricas
@@ -335,6 +342,17 @@
                     // add active
                     $("#definicao-medicao").addClass('active');
                 });
+                 $("#desenvolvendo-metricas").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/desenvolvendo-metricas.html');
+                    // add active
+                    $("#desenvolvendo-metricas").addClass('active');
+                });
+
+                
             });
         </script>
 </body>

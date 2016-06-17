@@ -1,0 +1,21 @@
+<header>
+<h1 class="page__title" itemprop="headline">Desenvolvendo Métricas</h1>
+</header>
+<section class="page__content" itemprop="text">
+    <p>O padrão IEEE 1061 define uma metodologia de desenvolvimento para atributos de qualidade de software. O padrão define  um atributo como "a propriedade mensurável física ou abstrata de uma entidade". O fator qualidade é um tipo de atributo, "um atributo de software orientado à gestão que contribui para a sua qualidade". A métrica é a função de medição, e um métrica de qualidade de software é uma "função que suas entradas são dados de software e que a saída é um único valor numérico que pode ser interpretado como o grau no qual o processo de software possui em um atributo que que afeta sua qualidade.”
+</p>
+<p>O padrão 1061 define vários critérios de avaliação, que se resumem nos seguintes:
+    <ol>
+        <li><b>Correlação: </b>A métrica  tem que ter uma correlação estatística linearmente relacionada com o fator de qualidade. </li>
+        <li><b>Consistência:</b> Seja F a variável do fator de qualidade e Y a saída da função de métrica, M: F&#x2192;Y. M deve ser uma função monotônica. Isso é, se f<sub>1</sub> > f<sub>2</sub> > f<sub>3</sub>, então nós devemos obter y<sub>1</sub> > y<sub>2</sub> > y<sub>3</sub>;
+</li>
+        <li> <b>Rastreamento:</b> Para a função de métrica, M: F&#x2192;Y. Como F muda de ff<sub>1</sub> para f<sub>2</sub> em tempo real, M(f) pode mudar imediatamente de y<sub>2</sub> para y<sub>2</sub>.
+</li>
+        <li><b>Previsibilidade:</b> Para funções de métrica, M: F&#x2192;Y. Se soubermos o valor de Y a algum ponto, devemos ser capazes de predizer o valor de F.
+</li>
+        <li><b>Poder Discriminadora:</b> Uma métrica pode ser capaz de discriminar entra componentes de alta qualidade e componentes de software de baixa qualidade. O conjunto de valores de métrica associados com a primeira deve ser significantemente maior (ou menor) que aqueles associados com a segunda.</li>
+        <li><b>Confiabilidade:</b> "Uma métrica deve demonstrar a correlação, rastreamento, consistência, previsibilidade, e propriedades de poder discriminador para ao menos P% da aplicação da métricas."
+</li>
+    </ol>
+</p>
+</section>
