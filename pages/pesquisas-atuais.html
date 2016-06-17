@@ -47,8 +47,21 @@
         <h3>Frameworks para melhor entendimento das métricas e assegurar de que de que elas estão sendo usadas corretamente</h3>
         <div>
             <ol>
-                <li>Um framework foi mostrado na seção <a id="framework-link" href="#"> um framework para availar métricas.</a> </li>
+                <li>Um framework foi mostrado na seção <a id="framework-link" href="#"> um framework para avaliar métricas.</a> </li>
             </ol>
         </div>
     </li>
 </ol>
+<script>
+    $(document).ready(function(){
+        $("#framework-link").click(function(){
+            // remove active 
+            var x = document.getElementsByClassName("active");
+            $(x).removeClass('active');
+            // load page
+            $('#artigo').load('pages/framework-metricas.html');
+            // add active
+            $("#framework-metricas").addClass('active');
+        });
+    });
+</script>

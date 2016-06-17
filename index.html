@@ -211,10 +211,7 @@
                 <!--Centro de Informática - UFPe. Todos os direitos reservados-->
             </div>
             <div class="page__footer-copyright">
-                © 2016 Template by
-                <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">
-                        Minimal Mistakes
-                    </a> .
+                © 2016 CIn UFPE
             </div>
         </footer>
     </div>
@@ -316,21 +313,33 @@
                     $("#indice-qualidade").addClass('active');
                 });
                 $("#sobre").click(function(){
-                    // remove active 
+                    // remove active
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active'); 
                     // load page
                     $('#artigo').load('pages/sobre.html');
                     // add active
                 });
                 $("#referencias").click(function(){
                     // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
                     // load page
                     $('#artigo').load('pages/referencias.html');
                     // add active
                 });
                 $("#metricas-software").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
                     $('#artigo').load('pages/contexto.html');
+                    // add active
+                    $("#contexto").addClass('active');                    
                 });
                 $("#equipe").click(function(){
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
                     $('#artigo').load('pages/equipe.html');
                 });
                  $("#definicao-medicao").click(function(){
