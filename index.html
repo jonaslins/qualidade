@@ -119,6 +119,9 @@
                                         Pra que serve
                                     </a>
                             </li>
+                            <li><a href="#" id="definicao-medicao">
+                                    Definição de Medição
+                                </a></li>
                             <li>
                                 <a class="" id="tipos-de-metricas" href="#">
                                         Tipos de Métricas
@@ -189,8 +192,6 @@
 
         </div>
     </div>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-        </script>
     <div align="center" style="margin: 1em 0;">
         <ins class="adsbygoogle" data-ad-client="ca-pub-7328585512091257" data-ad-format="auto" data-ad-slot="3049671934" style="display:block; border-bottom: initial;">
         </ins>
@@ -243,6 +244,7 @@
                     // add active
                     $("#contexto").addClass('active');
                 });
+                 
                 $("#criticas").click(function(){
                     // remove active 
                     var x = document.getElementsByClassName("active");
@@ -323,6 +325,15 @@
                 });
                 $("#equipe").click(function(){
                     $('#artigo').load('pages/equipe.html');
+                });
+                 $("#definicao-medicao").click(function(){
+                    // remove active 
+                    var x = document.getElementsByClassName("active");
+                    $(x).removeClass('active');
+                    // load page
+                    $('#artigo').load('pages/definicao-medicao.html');
+                    // add active
+                    $("#definicao-medicao").addClass('active');
                 });
             });
         </script>
