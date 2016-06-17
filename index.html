@@ -69,22 +69,22 @@
                         </button>
                     <ul class="visible-links">
                         <li class="masthead__menu-item masthead__menu-item--lg">
-                            <a id="metricas-software" href="#">
+                            <a class="metricas-software" href="#">
                                     Métricas de Software
                                 </a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a id="sobre" href="#">
+                            <a class="sobre" href="#">
                                     Sobre
                             </a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a id="equipe" href="#">
+                            <a class="equipe" href="#">
                                     Equipe
                                 </a>
                         </li>
                         <li class="masthead__menu-item">
-                            <a id="referencias" href="#">
+                            <a class="referencias" href="#">
                                     Referências
                                 </a>
                         </li>
@@ -105,32 +105,32 @@
                             </span>
                         <ul>
                             <li>
-                                <a class="active" id="contexto" href="#">
+                                <a class="contexto active" href="#">
                                         Contexto
                                     </a>
                             </li>
                             <li>
-                                <a class="" id="o-que-e" href="#">
+                                <a class="o-que-e" href="#">
                                         O que é
                                     </a>
                             </li>
                             <li>
-                                <a class="" id="pra-que-serve" href="#">
+                                <a  class="pra-que-serve" href="#">
                                         Pra que serve
                                     </a>
                             </li>
                             <li>
-                                <a href="#" id="desenvolvendo-metricas">
+                                <a href="#" class="desenvolvendo-metricas">
                                     Desenvolvendo Métricas
                                 </a>
                             </li>
                             <li>
-                                <a href="#" id="definicao-medicao">
+                                <a href="#" class="definicao-medicao">
                                     Definição de Medição
                                 </a>
                             </li>
                             <li>
-                                <a class="" id="tipos-de-metricas" href="#">
+                                <a class="tipos-de-metricas" href="#">
                                         Tipos de Métricas
                                     </a>
                             </li>
@@ -142,12 +142,12 @@
                             </span>
                         <ul>
                             <li>
-                                <a class="" id="framework-metricas" href="#">
+                                <a class="framework-metricas" href="#">
                                          Para métricas de software
                                     </a>
                             </li>
                             <li>
-                                <a class="" id="framework-avaliar" href="#">
+                                <a class="framework-avaliar" href="#">
                                         Para avaliar métricas
                                     </a>
                             </li>
@@ -159,13 +159,13 @@
                             </span>
                         <ul>
                             <li>
-                                <a class="" id="indice-qualidade" href="#">
+                                <a  class="indice-qualidade" href="#">
                                         Índice de qualidade estrutural do projeto (DSQI)
 
                                     </a>
                             </li>
                             <li>
-                                <a class="" id="software-package-metrics" href="#">
+                                <a  class="software-package-metrics" href="#">
                                         “Software Package Metrics” de Robert Cecil Martin
                                     </a>
                             </li>
@@ -178,13 +178,13 @@
                             </span>
                         <ul>
                             <li>
-                                <a class="" id="criticas" href="#">
+                                <a class="criticas" href="#">
                                          Críticas
                                           <!--limitações e dificuldades do uso de métricas de software-->
                                     </a>
                             </li>
                             <li>
-                                <a class="" id="pesquisas-atuais" href="#">
+                                <a class="pesquisas-atuais" href="#">
                                         Pesquisas atuais na área
                                     </a>
                             </li>
@@ -218,152 +218,12 @@
     <script src="./files/main.min.js">
         </script>
     <script src="js/jquery.js" type="text/javascript"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-                $('#artigo').load('pages/contexto.html');
-                 $("#o-que-e").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/o-que-e.html');
-                    // add active
-                    $("#o-que-e").addClass('active');
-                });
-                $("#pra-que-serve").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/pra-que-serve.html');
-                    // add active
-                    $("#pra-que-serve").addClass('active');
-                });
-                $("#contexto").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/contexto.html');
-                    // add active
-                    $("#contexto").addClass('active');
-                });
-                 
-                $("#criticas").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/criticas.html');
-                    // add active
-                    $("#criticas").addClass('active');
-                });
-                $("#framework-metricas").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/framework-metricas.html');
-                    // add active
-                    $("#framework-metricas").addClass('active');
-                });
-                $("#framework-avaliar").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/framework-avaliar.html');
-                    // add active
-                    $("#framework-avaliar").addClass('active');
-                });
-                $("#tipos-de-metricas").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/tipos-de-metricas.html');
-                    // add active
-                    $("#tipos-de-metricas").addClass('active');
-                });
-                $("#pesquisas-atuais").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/pesquisas-atuais.html');
-                    // add active
-                    $("#pesquisas-atuais").addClass('active');
-                });
-                $("#software-package-metrics").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/software-package-metrics.html');
-                    // add active
-                    $("#software-package-metrics").addClass('active');
-                });
-                $("#indice-qualidade").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/indice-qualidade.html');
-                    // add active
-                    $("#indice-qualidade").addClass('active');
-                });
-                $("#sobre").click(function(){
-                    // remove active
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active'); 
-                    // load page
-                    $('#artigo').load('pages/sobre.html');
-                    // add active
-                });
-                $("#referencias").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/referencias.html');
-                    // add active
-                });
-                $("#metricas-software").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/contexto.html');
-                    // add active
-                    $("#contexto").addClass('active');                    
-                });
-                $("#equipe").click(function(){
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    $('#artigo').load('pages/equipe.html');
-                });
-                 $("#definicao-medicao").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/definicao-medicao.html');
-                    // add active
-                    $("#definicao-medicao").addClass('active');
-                });
-                 $("#desenvolvendo-metricas").click(function(){
-                    // remove active 
-                    var x = document.getElementsByClassName("active");
-                    $(x).removeClass('active');
-                    // load page
-                    $('#artigo').load('pages/desenvolvendo-metricas.html');
-                    // add active
-                    $("#desenvolvendo-metricas").addClass('active');
-                });
-
-                
-            });
-        </script>
+    <script>
+     $(document).ready(function(){
+        $('#artigo').load('pages/contexto.html');
+     });
+    </script>
+    <script src="js/links.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <h1 class="page__title" itemprop="headline">O QUE É</h1>
 </header>
 <section class="page__content" itemprop="text">
-<p>Na seção <a id="contexto-link" href="#">contexto</a>, foram descritas áreas de negócio às quais as métricas de software seriam capazes de ajudar a desenvolver. É importante estabelecer que métricas de software não se limitam a testar e procurar por erros nos sistemas e processos de software, visto que são capazes de fornecer informações sobre os seguintes aspectos de um sistema de software: 
+<p>Na seção <a class="contexto" href="#">contexto</a>, foram descritas áreas de negócio às quais as métricas de software seriam capazes de ajudar a desenvolver. É importante estabelecer que métricas de software não se limitam a testar e procurar por erros nos sistemas e processos de software, visto que são capazes de fornecer informações sobre os seguintes aspectos de um sistema de software: 
 </p>
 <ul>
 <li>Qualidade de software, com diferentes métricas referentes a diferentes aspectos da qualidade, incluindo aspectos referentes ao código fonte do projeto;</li>
@@ -15,16 +15,5 @@
 Métricas de software são padrões de medida que determinam o grau de aderência de um sistema ou processo de software a uma determinada propriedade.
 Comumente, são ferramentas de engenharia de software que ajudam a entender variados aspectos do código fonte e do progresso do projeto.
 </p>
-<script>
-	$(document).ready(function(){
-	    $("#contexto-link").click(function(){
-	        // remove active 
-	        var x = document.getElementsByClassName("active");
-	        $(x).removeClass('active');
-	        // load page
-	        $('#artigo').load('pages/contexto.html');
-	        // add active
-	        $("#contexto").addClass('active');
-	    });
-	});
-</script>
+
+<script src="js/links.js" type="text/javascript"></script>

@@ -26,7 +26,7 @@
         </div>
     </li>
     <li class="accordion">
-        <h3>Julgamento humano e métricas de software</h3>
+        <h3>Julgamento humano e <a class="o-que-e" href="#">métricas de software</a></h3>
         <div>
             <ol>
                 <li>Há pesquisas que tentam endereçar o lado do julgamento humano no processamento de métricas;</li>
@@ -36,7 +36,7 @@
         </div>
     </li>
     <li class="accordion">
-        <h3>Métricas de software para diferentes tipos de defeitos de software</h3>
+        <h3> <a class="o-que-e" href="#">Métricas de software</a> para diferentes tipos de defeitos de software</h3>
         <div>
             <ol>
                 <li>Desmembrar os defeitos aos quais um software pode ser medido, dará uma visão melhor em um tipo particular de defeito que você possa estar interessado.</li>
@@ -47,21 +47,9 @@
         <h3>Frameworks para melhor entendimento das métricas e assegurar de que de que elas estão sendo usadas corretamente</h3>
         <div>
             <ol>
-                <li>Um framework foi mostrado na seção <a id="framework-link" href="#"> um framework para avaliar métricas.</a> </li>
+                <li>Um framework foi mostrado na seção <a class="framework-avaliar" href="#"> um framework para avaliar métricas.</a> </li>
             </ol>
         </div>
     </li>
 </ol>
-<script>
-    $(document).ready(function(){
-        $("#framework-link").click(function(){
-            // remove active 
-            var x = document.getElementsByClassName("active");
-            $(x).removeClass('active');
-            // load page
-            $('#artigo').load('pages/framework-metricas.html');
-            // add active
-            $("#framework-metricas").addClass('active');
-        });
-    });
-</script>
+<script src="js/links.js" type="text/javascript"></script>
